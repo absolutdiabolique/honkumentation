@@ -73,3 +73,33 @@ Height: ```60px```
 ```
 #### Variants
 bounceBlockA, bounceBlockB, bounceBlockD, animatedBounceBlock
+
+## Static Objects
+
+### colorBlock
+
+#### Dimensions
+Width: ```50px```
+
+Height: ```50px```
+#### Attributes
+```
+{
+  "type": "colorBlock",
+  "color": "#ff0000"      // the hex code color of the block
+}
+```
+
+### colorTile
+
+#### Dimensions
+Width: ```20px```
+
+Height: ```50px```
+#### Attributes
+```
+{
+  "type": "colorTile",
+  "color": "#ff0000"      // the hex code color of the tile
+}
+```
