@@ -53,19 +53,23 @@ All objects have some universal attributes.
 }
 ```
 
-# Dynamic Objects
+# Generic Objects
 
-## bounceBlock
-### Dimensions
+These objects go in ```"genericObjects"``` in the JSON.
+
+## Dynamic Objects
+
+### bounceBlock
+#### Dimensions
 Width: ```60px```
 
 Height: ```60px```
-### Attributes
+#### Attributes
 ```
 {
   "type": "typeOfObject", // type of the object
   "bF": 5                 // bounce force, the default is 5
 }
 ```
-### Variants
+#### Variants
 bounceBlockA, bounceBlockB, bounceBlockD, animatedBounceBlock
