@@ -1,14 +1,14 @@
 # Basic
-
+All the values shown here are the default values for the game (except for the coordinates of objects).
 ```
 {
   "name": "My Custom Level",
   "description": "",
   "version": 1.709,
-  "scrollSpeed": 2.4,
+  "scrollSpeed": 2.4,                   // speed 1 is about 62.65 pixels per second (needs verification)
   "gravity": 0.4,
   "antigravity": false,
-  "yTrack": false,
+  "yTrack": false,                      // if this is true, then the camera will follow the player up and down.
   "gradientTopColor": "#009dff",
   "gradientBottomColor": "#c2ccff",
   "disableBackgroundMusic": false,
@@ -28,9 +28,10 @@
   "genericObjects": [
 
   ],
-  "finishLineX": 661.302,
+  "finishLineX": 661.302,               // although strange, this is the default value
   "completionRequirement": {
-    "type": "crossFinishLine"
+    "type": "crossFinishLine"           // this is the default, but this can also be set to "speedrun"
+    "time": 15000                       // time in milliseconds until finish line. if the finish is not reached within this time, the goose will explode and die
   }
 }
 ```
