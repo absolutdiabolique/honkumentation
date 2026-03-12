@@ -49,7 +49,7 @@ All objects have some universal attributes.
   "s": 1.77,              // scale factor
   "fY": true,             // flipped Y?
   "fX": false,            // flipped X?
-  "z": 5                  // Z index, higher is up front
+  "z": 5,                 // Z index, higher is up front
   "l": 1                  // the layer that the object is in. this does not affect gameplay, but it does help with editing
 }
 ```
