@@ -63,17 +63,17 @@ These objects go in ```"genericObjects"``` in the JSON.
 A pipe, formed from a rectange on bottom and a rectangle on top.
 #### Dimensions
 ##### Bottom rectangle:
-Height: ```px```
+Height: ```245px```
 
-Height: ```px```
+Width: ```50px```
 ##### Top rectangle:
-Height: ```px```
+Height: ```30px```
 
-Height: ```px```
+Width: ```60px```
 ##### Bounding box:
-Height: ```px```
+Height: ```275px```
 
-Height: ```px```
+Width: ```60px```
 #### Attributes
 ```
 {
