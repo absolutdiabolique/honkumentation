@@ -22,15 +22,15 @@ All the values shown here are the default values for the game (except for the co
   "bullets": [],
   "bulletTriggers": [],
   "layers": {
-    "currentLayer": 1,
-    "maxLayers": 3
+    "currentLayer": 1,                  // this doesn't matter. this only decides which layer the editor will start with selected
+    "maxLayers": 3                      // i don't see why you need more than 3. one for layout, one for primary decoration, one for background decoration
   },
   "genericObjects": [
 
   ],
   "finishLineX": 661.302,               // although strange, this is the default value
   "completionRequirement": {
-    "type": "crossFinishLine",           // this is the default, but this can also be set to "speedrun"
+    "type": "crossFinishLine",          // this is the default, but this can also be set to "speedrun"
     "time": 15000                       // time in milliseconds until finish line. if the finish is not reached within this time, the goose will explode and die
   }
 }
@@ -86,8 +86,8 @@ Width: ```60px```
   "baseX": 230.281,       // idk what this does
   "baseY": 56.668,        // or this either
   "gMR": 100,             // idk
-  "direction": "up",       //  can be "up" or "down." it seems that if this conflicts with "st," then it will wait the delay before moving
-  "tD": 1000,              // delay at top in milliseconds
+  "direction": "up",      //  can be "up" or "down." it seems that if this conflicts with "st," then it will wait the delay before moving
+  "tD": 1000,             // delay at top in milliseconds
   "bD": 1000              // delay at bottom in milleseconds
 }
 ```
