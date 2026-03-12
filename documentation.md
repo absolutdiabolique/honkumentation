@@ -9,16 +9,16 @@ All the values shown here are the default values for the game (except for the co
   "gravity": 0.4,
   "antigravity": false,
   "yTrack": false,                      // if this is true, then the camera will follow the player up and down.
-  "gradientTopColor": "#009dff",
+  "gradientTopColor": "#009dff",        // the background is a vertical gradient
   "gradientBottomColor": "#c2ccff",
   "disableBackgroundMusic": false,
   "midiConfig": {
-    "restartOnDeath": false,
-    "volume": 100
+    "restartOnDeath": false,            // since there is no sync, it is recommended to keep it this way
+    "volume": 100                       // percent
   },
   "birdStartX": 100,
   "birdStartY": 300,
-  "pipes": [],
+  "pipes": [],                          // i don't even know why this exists
   "bullets": [],
   "bulletTriggers": [],
   "layers": {
