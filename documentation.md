@@ -106,6 +106,25 @@ Height: ```60px```
 #### Variants
 bounceBlockA, bounceBlockB, bounceBlockD, animatedBounceBlock
 
+### teleporter
+#### Dimensions
+idk too lazy
+#### Attributes
+When creating a teleporter, you must have two separate objects.
+```
+{
+    "type": "teleporter",
+    "x": 420,
+    "y": 69,
+    "cooldownDuration": 1,              // cooldown for usage, in seconds
+    "teleporterPairId": "pair_IPW7",    // the player will be teleported to the portal with the same id
+    "teleporterId": "tp_652JN9",        // doesn't matter, just make sure every id is unique
+    "transitionDuration": 200,          // amount of time to transition from one portal to the other, in milliseconds
+    "color": "#ffffff",                 // the color of the portal
+    "syncColorWithPair": true           // if this is selected, then the other portal in the pair will have the same color as this portal
+}
+```
+
 ## Static Objects
 
 ### colorBlock
