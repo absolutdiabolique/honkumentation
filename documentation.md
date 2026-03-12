@@ -59,6 +59,38 @@ These objects go in ```"genericObjects"``` in the JSON.
 
 ## Dynamic Objects
 
+### thwompPipe
+A pipe, formed from a rectange on bottom and a rectangle on top.
+#### Dimensions
+##### Bottom rectangle:
+Height: ```px```
+
+Height: ```px```
+##### Top rectangle:
+Height: ```px```
+
+Height: ```px```
+##### Bounding box:
+Height: ```px```
+
+Height: ```px```
+#### Attributes
+```
+{
+  "type": "thwompPipe",
+  "uS": 54,               // up speed in pixels/second
+  "dS": 30,               // down speed in pixels/second
+  "mR": 75,               // movement range
+  "st": "moving_up",      // can be "moving_up" or "moving down." this is starting direction
+  "baseX": 230.281,       // idk what this does
+  "baseY": 56.668,        // or this either
+  "gMR": 100,             // idk
+  "direction": "up"       //  can be "up" or "down." it seems that if this conflicts with "st," then it will wait the delay before moving
+  "tD": 1000              // delay at top in milliseconds
+  "bD": 1000              // delay at bottom in milleseconds
+}
+```
+
 ### bounceBlock
 #### Dimensions
 Width: ```60px```
