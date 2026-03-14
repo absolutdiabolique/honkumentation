@@ -1,3 +1,35 @@
+- [Basic](#basic)
+- [Universal Attributes](#universal-attributes)
+- [Generic Objects](#generic-objects)
+  - [Dynamic Objects](#dynamic-objects)
+    - [thwompPipe](#thwomppipe)
+      - [Dimensions](#dimensions)
+        - [Bottom rectangle:](#bottom-rectangle)
+        - [Top rectangle:](#top-rectangle)
+        - [Bounding box:](#bounding-box)
+      - [Attributes](#attributes)
+    - [bounceBlock](#bounceblock)
+      - [Dimensions](#dimensions-1)
+      - [Attributes](#attributes-1)
+      - [Variants](#variants)
+    - [teleporter](#teleporter)
+      - [Dimensions](#dimensions-2)
+      - [Attributes](#attributes-2)
+  - [Static Objects](#static-objects)
+    - [colorBlock](#colorblock)
+      - [Dimensions](#dimensions-3)
+      - [Attributes](#attributes-3)
+    - [colorTile](#colortile)
+      - [Dimensions](#dimensions-4)
+      - [Attributes](#attributes-4)
+  - [Consumable](#consumable)
+    - [tinyMushroom](#tinymushroom)
+      - [Dimensions](#dimensions-5)
+      - [Attributes](#attributes-5)
+    - [bigMushroom](#bigmushroom)
+      - [Dimensions](#dimensions-6)
+      - [Attributes](#attributes-6)
+
 # Basic
 All the values shown here are the default values for the game (except for the coordinates of objects).
 ```
@@ -35,9 +67,8 @@ All the values shown here are the default values for the game (except for the co
   }
 }
 ```
-
+The goose's hitbox is a trapezoid. It appears to be ```33px``` tall. At the base, it is ```28px``` wide. At the top, it is ```10px``` wide. It is similar in size to a tiny egg.
 # Universal Attributes
-
 All objects have some universal attributes.
 
 ```
@@ -45,7 +76,7 @@ All objects have some universal attributes.
   "type": "typeOfObject", // type of the object
   "x": 420,               // X coordinate
   "y": 69,                // Y coordinate
-  "a": 0.262,             // rotation
+  "a": 0,                 // rotation, in radians
   "s": 1.77,              // scale factor
   "fY": true,             // flipped Y?
   "fX": false,            // flipped X?
@@ -153,5 +184,31 @@ Height: ```50px```
 {
   "type": "colorTile",
   "color": "#ff0000"      // the hex code color of the tile
+}
+```
+## Consumable
+tinyMushrooms and bigMushrooms have their modifiers applied instantly. Their modifiers stack. The minimum size appears to be 0.1x size, and the maximum appears to be 5x size.
+### tinyMushroom
+#### Dimensions
+Width: ```28px```
+
+Height: ```33px```
+#### Attributes
+```
+{
+  "type": "tinyMushroom",
+  "sF": 0.5                 // scale factor
+}
+```
+### bigMushroom
+#### Dimensions
+Width: ```56px```
+
+Height: ```66px```
+#### Attributes
+```
+{
+  "type": "bigMushroom",
+  "gF": 2                  // growth factor
 }
 ```
