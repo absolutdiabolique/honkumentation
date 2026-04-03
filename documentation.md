@@ -22,13 +22,19 @@
     - [colorTile](#colortile)
       - [Dimensions](#dimensions-4)
       - [Attributes](#attributes-4)
-  - [Consumable](#consumable)
-    - [tinyMushroom](#tinymushroom)
+    - [PipeTip](#pipetip)
       - [Dimensions](#dimensions-5)
       - [Attributes](#attributes-5)
-    - [bigMushroom](#bigmushroom)
+    - [PipeBody](#pipebody)
       - [Dimensions](#dimensions-6)
       - [Attributes](#attributes-6)
+  - [Consumable](#consumable)
+    - [tinyMushroom](#tinymushroom)
+      - [Dimensions](#dimensions-7)
+      - [Attributes](#attributes-7)
+    - [bigMushroom](#bigmushroom)
+      - [Dimensions](#dimensions-8)
+      - [Attributes](#attributes-8)
 
 # Basic
 All the values shown here are the default values for the game (except for the coordinates of objects).
@@ -186,6 +192,35 @@ Height: ```50px```
   "color": "#ff0000"      // the hex code color of the tile
 }
 ```
+
+### PipeTip
+The tip of a pipe, but static.
+#### Dimensions
+Height: ```30px```
+
+Width: ```60px```
+#### Attributes
+```
+{
+  "type": "PipeTip",
+  // nothing else, since it is static
+}
+```
+
+### PipeBody
+The body of a pipe, but static and less tall.
+#### Dimensions
+Height: ```50px```
+
+Width: ```45px```
+#### Attributes
+```
+{
+  "type": "PipeBody",
+  // nothing else, since it is static
+}
+```
+
 ## Consumable
 tinyMushrooms and bigMushrooms have their modifiers applied instantly. Their modifiers stack. The minimum size appears to be 0.1x size, and the maximum appears to be 5x size.
 ### tinyMushroom
